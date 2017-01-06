@@ -290,10 +290,43 @@ init_mathjax();
             <hr/>
             <article>
                 <h2><a href="../w16-yuan-dan-kuai-le.html">W16 元旦快樂</a></h2>
-                <div class="summary"><h4>W16</h4>
-
+                <div class="summary"><p>2017年元旦快樂</p>
 
                     <a class="btn btn-default btn-xs" href="../w16-yuan-dan-kuai-le.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../w15.html">W15</a></h2>
+                <div class="summary"><!-- 導入 Brython 標準程式庫 -->
+
+<script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
+</script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下可以執行  Brython 程式 -->
+
+<div id="con"></div>
+
+<script type="text/python3">
+from browser import document as do
+from browser import html
+c = do["con"]
+def compa(e):
+    your_input = input("請輸入一個整數!")
+    # 如何判斷所輸入的整數比 10 大
+
+    if int(your_input) > 10:
+        c <= "所輸入的整數:" + your_input ...</script></!--></!--></!-->
+                    <a class="btn btn-default btn-xs" href="../w15.html">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -377,6 +410,11 @@ http://mde.tw/2016fallcp/course/Python3Programs.txt</a> 整理成brython</p>
                         </a>
                     </li>
                     <li class="list-group-item">
+                        <a href="../w15.html">
+                            W15
+                        </a>
+                    </li>
+                    <li class="list-group-item">
                         <a href="../w14.html">
                             W14
                         </a>
@@ -384,11 +422,6 @@ http://mde.tw/2016fallcp/course/Python3Programs.txt</a> 整理成brython</p>
                     <li class="list-group-item">
                         <a href="../w13-lian-xi-2.html">
                             W13  練習-2
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="../w13-lian-xi-1.html">
-                            W13  練習-1
                         </a>
                     </li>
                 </ul>
